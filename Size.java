@@ -2,8 +2,8 @@
 /**
  * Enumeration class Size - write a description of the enum class here
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Afonsomrm)
+ * @version (04/03/2021)
  */
 
  public enum Size {
@@ -29,6 +29,9 @@
  public String getDescription() {
  return description;
  }
+ /**
+  * @return minValue
+  */
  public int getMinValue() {
  return minValue;
  }
