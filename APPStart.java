@@ -14,34 +14,23 @@ public class APPStart
     System.out.println("2: Medio");
     System.out.println("3: Grande");
     int menuOption = scanner.nextInt();
+    Size size = Size.MEDIUM;
     switch(menuOption){
         case 1:
-        Size size1 = Size.SMALL;
-        System.out.println("Name:"+size1.name());
-        System.out.println("toString():\""+size1.toString()+"\"");
-        System.out.println("Ordem:"+size1.ordinal());
-        System.out.println("Valor minimo:"+size1.getMinValue());
-        System.out.println("Valor maximo:"+size1.getMaxValue());
-        System.out.println("Código:\'"+size1.getCode()+"\''");
+        size = Size.SMALL;
         break;
         case 2:
-        Size size2 = Size.MEDIUM;
-        System.out.println("Name:"+size2.name());
-        System.out.println("toString():\""+size2.toString()+"\"");
-        System.out.println("Ordem:"+size2.ordinal());
-        System.out.println("Valor minimo:"+size2.getMinValue());
-        System.out.println("Valor maximo:"+size2.getMaxValue());
-        System.out.println("Código:\'"+size2.getCode()+"\''");
+        size = Size.MEDIUM;
         break;
         case 3:
-        Size size3 = Size.LARGE;
-        System.out.println("Name:"+size3.name());
-        System.out.println("toString():\""+size3.toString()+"\"");
-        System.out.println("Ordem:"+size3.ordinal());
-        System.out.println("Valor minimo:"+size3.getMinValue());
-        System.out.println("Valor maximo:"+size3.getMaxValue());
-        System.out.println("Código:\'"+size3.getCode()+"\''");
+        size = Size.LARGE;
         break;
     }
+        System.out.println("Name:"+size.name());
+        System.out.println("toString():\""+size.toString()+"\"");
+        System.out.println("Ordem:"+size.ordinal());
+        System.out.println("Valor minimo:"+size.getMinValue());
+        System.out.println("Valor maximo:"+size.getMaxValue());
+        System.out.println("Código:\'"+size.getCode()+"\''");
     }
 }
